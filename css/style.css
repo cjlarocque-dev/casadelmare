@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@600;700&display=swap');
+
 :root {
     --primary-color: #0077be;
     --secondary-color: #00d4ff;
@@ -19,7 +21,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
 }
@@ -54,6 +56,7 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
+    font-family: 'Pacifico', cursive;
 }
 
 .nav-menu {
@@ -119,6 +122,8 @@ body {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     color: var(--sand-color);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 .hero-content p {
@@ -154,6 +159,8 @@ body {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: var(--primary-color);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 .gallery-grid {
@@ -191,6 +198,8 @@ body {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: var(--primary-color);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 .favorites-grid {
@@ -215,6 +224,8 @@ body {
     color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: 1.3rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 .favorite-card p {
@@ -232,6 +243,8 @@ body {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 .contact p {
