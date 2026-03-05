@@ -102,7 +102,10 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #0077be 0%, #00d4ff 100%);
+    background: linear-gradient(135deg, rgba(0, 119, 190, 0.7), rgba(0, 212, 255, 0.7)), url('pictures/dock-canal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
     padding: 120px 20px;
     text-align: center;
