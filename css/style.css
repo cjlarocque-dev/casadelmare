@@ -234,6 +234,43 @@ body {
     color: var(--text-light);
 }
 
+.venue-list {
+    margin-top: 1rem;
+}
+
+.venue-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0, 119, 190, 0.2);
+}
+
+.venue-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.venue-name {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+.venue-name:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.venue-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
 /* Reviews Section */
 .reviews {
     padding: 60px 0;
