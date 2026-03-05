@@ -133,6 +133,7 @@ body {
 }
 
 .cta-button {
+    display: inline-block;
     background-color: var(--accent-color);
     color: white;
     padding: 12px 30px;
@@ -142,6 +143,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .cta-button:hover {
