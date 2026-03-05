@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Playfair+Display:wght@700&family=Raleway:wght@400;500;600&display=swap');
 
 :root {
     --primary-color: #0077be;
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
 }
@@ -56,7 +56,7 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Playfair Display', serif;
 }
 
 .nav-menu {
@@ -122,7 +122,7 @@ body {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     color: var(--sand-color);
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
@@ -159,7 +159,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: var(--primary-color);
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
@@ -198,7 +198,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: var(--primary-color);
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
@@ -224,7 +224,7 @@ body {
     color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: 1.3rem;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
@@ -243,7 +243,7 @@ body {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
