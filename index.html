@@ -24,7 +24,16 @@
         "identifier": "casa-del-mare-nmbsc",
         "name": "Casa Del Mare",
         "description": "Luxury beachfront vacation rental in North Myrtle Beach, SC with direct intercoastal water access",
-        "image": "https://www.familybeachtrips.com/pictures/dock-canal.jpg",
+        "image": [
+            "https://www.familybeachtrips.com/pictures/dock-canal.jpg",
+            "https://www.familybeachtrips.com/pictures/hottub.jpg",
+            "https://www.familybeachtrips.com/pictures/cdm-front.jpg",
+            "https://www.familybeachtrips.com/pictures/cdm-living-room.jpg",
+            "https://www.familybeachtrips.com/pictures/cdm-kitchen.jpg",
+            "https://www.familybeachtrips.com/pictures/cdm-mbr.jpg",
+            "https://www.familybeachtrips.com/pictures/cdm-deck.jpg",
+            "https://www.familybeachtrips.com/pictures/cdm-back-patio.jpg"
+        ],
         "url": "https://www.familybeachtrips.com",
         "address": {
             "@type": "PostalAddress",
@@ -39,6 +48,13 @@
             "latitude": 33.8261,
             "longitude": -78.6711
         },
+        "numberOfBedrooms": 5,
+        "numberOfBathroomsTotal": 2,
+        "occupancy": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 17
+        },
         "contactPoint": {
             "@type": "ContactPoint",
             "url": "https://www.vacasa.com/unit/129066",
@@ -48,39 +64,92 @@
         "amenityFeature": [
             {
                 "@type": "LocationFeatureSpecification",
-                "name": "Waterfront"
+                "name": "Waterfront",
+                "value": true
             },
             {
                 "@type": "LocationFeatureSpecification",
-                "name": "Hot Tub"
+                "name": "Hot Tub",
+                "value": true
             },
             {
                 "@type": "LocationFeatureSpecification",
-                "name": "Intercoastal Water Access"
+                "name": "Intercoastal Water Access",
+                "value": true
             }
         ],
         "containsPlace": [
             {
                 "@type": "Room",
                 "name": "Master Bedroom",
-                "description": "Master bedroom with ensuite"
+                "description": "Master bedroom with ensuite",
+                "occupancy": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 1,
+                    "maxValue": 2
+                },
+                "numberOfBedrooms": 1,
+                "bed": "King"
             },
             {
                 "@type": "Room",
                 "name": "Guest Bedrooms",
-                "description": "Multiple guest bedrooms including lower level rooms and bunk room"
+                "description": "Multiple guest bedrooms including lower level rooms and bunk room",
+                "occupancy": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 1,
+                    "maxValue": 12
+                },
+                "numberOfBedrooms": 4,
+                "bed": "Queen and Twin"
             },
             {
                 "@type": "Room",
                 "name": "Living Areas",
-                "description": "Living room, dining area, game room, and kitchen"
+                "description": "Living room, dining area, game room, and kitchen",
+                "amenityFeature": [
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Full Kitchen",
+                        "value": true
+                    },
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Game Room",
+                        "value": true
+                    }
+                ]
             },
             {
                 "@type": "Room",
                 "name": "Outdoor Spaces",
-                "description": "Deck, patio, hot tub, and direct water access"
+                "description": "Deck, patio, hot tub, and direct water access",
+                "amenityFeature": [
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Hot Tub",
+                        "value": true
+                    },
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Deck",
+                        "value": true
+                    },
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Water Access",
+                        "value": true
+                    }
+                ]
             }
         ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": 1,
+            "bestRating": "5",
+            "worstRating": "1"
+        },
         "offers": {
             "@type": "Offer",
             "priceCurrency": "USD",
