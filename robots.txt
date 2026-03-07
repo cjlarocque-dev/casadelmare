@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /js/
+Disallow: *.json$
+
+Sitemap: https://www.familybeachtrips.com/sitemap.xml
