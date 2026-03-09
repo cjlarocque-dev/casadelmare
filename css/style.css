@@ -147,6 +147,68 @@ body {
     background-color: #ff8555;
 }
 
+/* Amenities Section */
+.amenities {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+}
+
+.amenities h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+.amenities-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.amenities-content > p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.amenity-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    border-top: 4px solid var(--primary-color);
+}
+
+.amenity-card:hover {
+    transform: translateY(-5px);
+}
+
+.amenity-card h4 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+.amenity-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /* Gallery Section */
 .gallery {
     padding: 60px 0;
