@@ -26,6 +26,7 @@
   - **For backend:** GitHub Pages doesn't support backend services. Options: (a) Formspree/Basin (easiest, no coding), (b) Netlify/Vercel Functions (serverless), (c) Separate backend (Heroku/Railway/DigitalOcean), (d) Firebase (all-in-one BaaS). **Recommended:** Formspree or Basin - simple form + file uploads.
 
 ### Medium Priority
+- [ ] **Add owners note section** - Create a new "A Note from the Owners" section that shares the owners message, story, or welcome to guests. Can be placed after the Welcome section or as a standalone feature.
 - [ ] **Optimize site performance** - Implement image optimization (WebP conversion, lazy loading), add browser caching headers, minify CSS/JS, and measure Core Web Vitals via Google PageSpeed Insights.
 
 ### Low Priority
