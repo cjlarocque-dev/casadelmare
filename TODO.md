@@ -26,6 +26,7 @@
 - [ ] **Optimize site performance** - Implement image optimization (WebP conversion, lazy loading), add browser caching headers, minify CSS/JS, and measure Core Web Vitals via Google PageSpeed Insights.
 
 ### Low Priority
+- [ ] **Generate printable QR code** - Create a QR code linking to https://www.familybeachtrips.com/casadelmare/index.html suitable for printing on promotional materials and signage.
 - [ ] **Monitor analytics and rankings** - Set up monthly GA4 reports, track organic search traffic, monitor keyword rankings in Google Search Console, and document trends.
 
 ---
