@@ -27,6 +27,7 @@
 
 ### Medium Priority
 - [ ] **Add owners note section** - Create a new "A Note from the Owners" section that shares the owners message, story, or welcome to guests. Can be placed after the Welcome section or as a standalone feature.
+- [ ] **Document reason for Casa Del Mare name** - Add explanation of why the property is named "Casa Del Mare" (House of the Sea). Can be included in the owners note section or as a standalone feature explaining the significance/inspiration behind the name.
 - [ ] **Optimize site performance** - Implement image optimization (WebP conversion, lazy loading), add browser caching headers, minify CSS/JS, and measure Core Web Vitals via Google PageSpeed Insights.
 
 ### Low Priority
