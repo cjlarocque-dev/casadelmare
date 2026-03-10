@@ -53,7 +53,8 @@
         "occupancy": {
             "@type": "QuantitativeValue",
             "minValue": 1,
-            "maxValue": 17
+            "maxValue": 17,
+            "value": 17
         },
         "contactPoint": {
             "@type": "ContactPoint",
@@ -86,10 +87,17 @@
                 "occupancy": {
                     "@type": "QuantitativeValue",
                     "minValue": 1,
-                    "maxValue": 2
+                    "maxValue": 2,
+                    "value": 2
                 },
                 "numberOfBedrooms": 1,
-                "bed": "King"
+                "numberOfBathroomsTotal": 1,
+                "bed": [
+                    {
+                        "@type": "BedType",
+                        "name": "King"
+                    }
+                ]
             },
             {
                 "@type": "Room",
@@ -98,15 +106,34 @@
                 "occupancy": {
                     "@type": "QuantitativeValue",
                     "minValue": 1,
-                    "maxValue": 12
+                    "maxValue": 12,
+                    "value": 12
                 },
                 "numberOfBedrooms": 4,
-                "bed": "Queen and Twin"
+                "numberOfBathroomsTotal": 1,
+                "bed": [
+                    {
+                        "@type": "BedType",
+                        "name": "Queen"
+                    },
+                    {
+                        "@type": "BedType",
+                        "name": "Twin"
+                    }
+                ]
             },
             {
                 "@type": "Room",
                 "name": "Living Areas",
                 "description": "Living room, dining area, game room, and kitchen",
+                "occupancy": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 1,
+                    "maxValue": 16,
+                    "value": 16
+                },
+                "numberOfBedrooms": 0,
+                "numberOfBathroomsTotal": 0,
                 "amenityFeature": [
                     {
                         "@type": "LocationFeatureSpecification",
@@ -124,6 +151,14 @@
                 "@type": "Room",
                 "name": "Outdoor Spaces",
                 "description": "Deck, patio, hot tub, and direct water access",
+                "occupancy": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 1,
+                    "maxValue": 16,
+                    "value": 16
+                },
+                "numberOfBedrooms": 0,
+                "numberOfBathroomsTotal": 0,
                 "amenityFeature": [
                     {
                         "@type": "LocationFeatureSpecification",
