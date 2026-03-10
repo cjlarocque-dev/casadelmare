@@ -21,7 +21,8 @@
 ### High Priority
 - [ ] **Fix remaining SEO issues** - Resolve schema validation errors and Google Search Console warnings. Verify canonical URLs, og:url tags, and schema.org VacationRental markup compliance after site restructuring.
 - [ ] **Create next property template** - Document scaffolding process for adding new properties. Create template directory structure, update sitemap/robots generation, and document copy/image requirements.
-- [ ] **Add new website sections** - Implement 5 new sections: (1) Welcome section with property intro, (2) House Guide with instructions/tips, (3) Referral Rewards program info, (4) Return Guest Discounts, (5) Guest Wall with photo upload feature (requires email and backend form handling).
+- [ ] **Add new website sections** - Implement 5 new sections: (1) Welcome section with property intro, (2) House Guide with instructions/tips, (3) Referral Rewards program info, (4) Return Guest Discounts, (5) Guest Wall with photo upload feature (requires email and backend form handling). 
+  - **For Guest Wall backend:** GitHub Pages doesn't support backend services. Options: (a) Formspree/Basin (easiest, no coding), (b) Netlify/Vercel Functions (serverless), (c) Separate backend (Heroku/Railway/DigitalOcean), (d) Firebase (all-in-one BaaS). **Recommended:** Formspree or Basin - simple form + file uploads.
 
 ### Medium Priority
 - [ ] **Optimize site performance** - Implement image optimization (WebP conversion, lazy loading), add browser caching headers, minify CSS/JS, and measure Core Web Vitals via Google PageSpeed Insights.
