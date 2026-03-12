@@ -132,6 +132,9 @@
                     <a href="#favorites" class="nav-link">Local Favorites</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#guest-wall" class="nav-link">Guest Wall</a>
+                </li>
+                <li class="nav-item">
                     <a href="#reviews" class="nav-link">Reviews</a>
                 </li>
                 <li class="nav-item">
@@ -386,6 +389,92 @@
                         <div class="venue-item">
                             <a href="https://www.nmbwater.com/" target="_blank" class="venue-name">Dolphin & Marine Life Sightings</a>
                             <p class="venue-description">Natural dolphin encounters throughout the intracoastal waterways and ocean, often visible from docks and piers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Wall Section -->
+    <section id="guest-wall" class="guest-wall">
+        <div class="container">
+            <h2>Guest Wall</h2>
+            <p class="section-intro">Share your Casa Del Mare experience! Upload a photo from your stay and you'll be eligible for a return guest discount on your next visit.</p>
+            
+            <div class="guest-wall-content">
+                <!-- Guest Wall Form -->
+                <div class="guest-wall-form-container">
+                    <h3>Submit Your Photo</h3>
+                    <form action="https://usebasin.com/f/dcf997485946" method="POST" enctype="multipart/form-data" class="guest-wall-form">
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first_name" required placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last_name" required placeholder="Smith">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required placeholder="New York">
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State *</label>
+                                <input type="text" id="state" name="state" required placeholder="NY" maxlength="2">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin">Check-in Date *</label>
+                                <input type="text" id="checkin" name="checkin_date" required placeholder="March 15, 2024">
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Check-out Date *</label>
+                                <input type="text" id="checkout" name="checkout_date" required placeholder="March 22, 2024">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="photo">Photo Upload *</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" required>
+                            <small>Please upload a JPG or PNG image (max 10MB)</small>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <label>
+                                <input type="checkbox" name="consent" required>
+                                I consent to my photo and name being displayed on the Casa Del Mare website and agree to the <a href="/casadelmare/privacy.html" target="_blank">Privacy Policy</a>.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit Photo</button>
+                    </form>
+                </div>
+
+                <!-- Guest Photos Grid -->
+                <div class="guest-photos-container">
+                    <h3>Guest Memories</h3>
+                    <div class="guest-photos-grid">
+                        <!-- Photos will be manually added here -->
+                        <div class="guest-photo-placeholder">
+                            <p>Guest photos coming soon!</p>
                         </div>
                     </div>
                 </div>
