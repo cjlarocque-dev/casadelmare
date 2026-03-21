@@ -92,6 +92,9 @@ This site is automatically deployed to GitHub Pages when you push to the `main` 
 - Google Search Console (Performance): https://search.google.com/search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.familybeachtrips.com%2F&metrics=CLICKS%2CIMPRESSIONS
 - Bing Webmaster Tools: https://www.bing.com/webmasters/home
 
+**Analytics**:
+- Google Analytics: https://analytics.google.com/analytics/web/#/a386886673p527558280/reports/intelligenthome
+
 ### To Update Search Engines After Deployment
 1. Visit Google Search Console and re-submit sitemap.xml (paths changed to /casadelmare/)
 2. Submit updated sitemap to Bing Webmaster Tools
