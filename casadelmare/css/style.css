@@ -33,7 +33,7 @@ body {
 /* Navigation */
 .navbar {
     background-color: var(--primary-color);
-    padding: 1rem 0;
+    padding: 0.8rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -51,7 +51,7 @@ body {
 
 .logo {
     color: var(--light-bg);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     font-family: 'Dancing Script', cursive;
@@ -60,7 +60,7 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 
 .nav-link {
@@ -68,6 +68,7 @@ body {
     text-decoration: none;
     transition: color 0.3s;
     font-weight: 500;
+    font-size: 0.95rem;
 }
 
 .nav-link:hover {
