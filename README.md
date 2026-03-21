@@ -89,7 +89,7 @@ This site is automatically deployed to GitHub Pages when you push to the `main` 
 **Domain Registration**: www.familybeachtrips.com is registered with GoDaddy. DNS points to GitHub Pages.
 
 **Webmaster Tools**:
-- Google Search Console: https://search.google.com/search-console/
+- Google Search Console (Performance): https://search.google.com/search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.familybeachtrips.com%2F&metrics=CLICKS%2CIMPRESSIONS
 - Bing Webmaster Tools: https://www.bing.com/webmasters/home
 
 ### To Update Search Engines After Deployment
