@@ -86,6 +86,8 @@ casadelmare/ (root)
 
 This site is automatically deployed to GitHub Pages when you push to the `main` branch. The custom domain (www.familybeachtrips.com) is configured via the `CNAME` file.
 
+**Domain Registration**: www.familybeachtrips.com is registered with GoDaddy. DNS points to GitHub Pages.
+
 ### To Update Search Engines After Deployment
 1. Visit Google Search Console and re-submit sitemap.xml (paths changed to /casadelmare/)
 2. Submit updated sitemap to Bing Webmaster Tools
