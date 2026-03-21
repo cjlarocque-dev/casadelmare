@@ -88,6 +88,10 @@ This site is automatically deployed to GitHub Pages when you push to the `main` 
 
 **Domain Registration**: www.familybeachtrips.com is registered with GoDaddy. DNS points to GitHub Pages.
 
+**Webmaster Tools**:
+- Google Search Console: https://search.google.com/search-console/
+- Bing Webmaster Tools: https://www.bing.com/webmasters/home
+
 ### To Update Search Engines After Deployment
 1. Visit Google Search Console and re-submit sitemap.xml (paths changed to /casadelmare/)
 2. Submit updated sitemap to Bing Webmaster Tools
