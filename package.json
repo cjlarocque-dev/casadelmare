@@ -1,0 +1,23 @@
+{
+  "name": "casadelmare-website",
+  "version": "1.0.0",
+  "description": "Casa Del Mare - Beachfront vacation rental brochure website",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "vacation-rental",
+    "beach",
+    "north-myrtle-beach",
+    "property"
+  ],
+  "author": "Casa Del Mare",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "jsdom": "^22.1.0"
+  }
+}
