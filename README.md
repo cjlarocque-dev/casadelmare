@@ -94,6 +94,8 @@ This site is automatically deployed to GitHub Pages when you push to the `main` 
 
 **Analytics**:
 - Google Analytics: https://analytics.google.com/analytics/web/#/a386886673p527558280/reports/intelligenthome
+- Facebook Business: https://business.facebook.com/latest/home?nav_ref=bm_home_redirect&business_id=951859051115089&asset_id=957181740821214
+- Facebook Ads Manager: https://adsmanager.facebook.com/adsmanager/manage/adsets?act=952989880585623&business_id=951859051115089&nav_entry_point=mbs_sub_nav&selected_campaign_ids=120244565319950663
 
 ### To Update Search Engines After Deployment
 1. Visit Google Search Console and re-submit sitemap.xml (paths changed to /casadelmare/)
