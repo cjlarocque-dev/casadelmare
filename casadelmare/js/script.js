@@ -38,6 +38,16 @@ galleryItems.forEach(item => {
         modalImage.src = img.src;
         imageModal.classList.add('active');
         document.body.style.overflow = 'hidden';
+        
+        // Track gallery view with Facebook Pixel
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'ViewContent', {
+                content_type: 'product',
+                content_name: 'Property Gallery',
+                value: 0,
+                currency: 'USD'
+            });
+        }
     });
 });
 
@@ -62,3 +72,34 @@ document.addEventListener('keydown', (event) => {
         document.body.style.overflow = 'auto';
     }
 });
+
+// Track Booking Link Clicks (Book Now CTA)
+const bookingLinks = document.querySelectorAll('a[href="https://www.vacasa.com/unit/129066"]');
+bookingLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Track booking initiation with Facebook Pixel
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'InitiateCheckout', {
+                content_type: 'product',
+                content_name: 'Casa Del Mare Booking',
+                value: 0,
+                currency: 'USD'
+            });
+        }
+    });
+});
+
+// Track Guest Wall Form Submission
+const guestWallForm = document.querySelector('.guest-wall-form');
+if (guestWallForm) {
+    guestWallForm.addEventListener('submit', () => {
+        // Track form submission as a lead with Facebook Pixel
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'Lead', {
+                content_name: 'Guest Wall Submission',
+                value: 0,
+                currency: 'USD'
+            });
+        }
+    });
+}

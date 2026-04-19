@@ -82,14 +82,21 @@ npm run test:coverage
 - Validate schema.org VacationRental markup compliance
 - Status: `pending`
 
-**2. Create next property template**
+**2. Add Facebook Pixel**
+- Implement Facebook Pixel tracking code
+- Track page views and conversion events
+- Enable retargeting and audience building
+- Verify pixel fires correctly across all pages
+- Status: `pending`
+
+**3. Create next property template**
 - Document scaffolding process for adding new properties
 - Create template directory structure
 - Update sitemap/robots generation for multi-property setup
 - Document copy/image requirements
 - Status: `pending`
 
-**3. Add new website sections** (5 sections)
+**4. Add new website sections** (5 sections)
 - (1) Welcome section with property intro
 - (2) House Guide with instructions/tips
 - (3) Referral Rewards program info
@@ -98,8 +105,6 @@ npm run test:coverage
   - Form fields: Email, First Name, Last Name, City, State, Phone Number, Photo Upload
   - Recommended backend: Formspree or Basin (simple form + file uploads)
 - Status: `pending`
-
-### 🟡 Medium Priority
 
 **4. Add owners note section**
 - Create "A Note from the Owners" section
