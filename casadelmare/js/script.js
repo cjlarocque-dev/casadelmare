@@ -103,3 +103,16 @@ if (guestWallForm) {
         }
     });
 }
+
+// Track Facebook Link Clicks
+const facebookLinks = document.querySelectorAll('a[href*="facebook.com"]');
+facebookLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Track Facebook social link click
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'Contact', {
+                content_name: 'Facebook Profile Link'
+            });
+        }
+    });
+});
