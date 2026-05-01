@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ally Credit Application – Fillable Form (App585)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 1100px;
+            line-height: 1.4;
+            color: #000;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+        .logo {
+            text-align: center;
+            font-weight: bold;
+            font-size: 48px;
+            letter-spacing: -2px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        td, th {
+            border: 1px solid #000;
+            padding: 8px;
+            vertical-align: top;
+        }
+        .header-row td {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: center;
+        }
+        .section-header {
+            background-color: #000;
+            color: #fff;
+            padding: 8px 12px;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+        }
+        input[type="text"], input[type="tel"], input[type="email"], input[type="date"], input[type="number"] {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #000;
+            padding: 4px 6px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 6px;
+            transform: scale(1.2);
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .note {
+            font-style: italic;
+            font-size: 0.95em;
+            margin: 15px 0;
+        }
+        .signature-line {
+            border-top: 2px solid #000;
+            margin-top: 40px;
+            padding-top: 8px;
+        }
+        .footer {
+            font-size: 0.85em;
+            text-align: center;
+            margin-top: 60px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+        @media print {
+            body { box-shadow: none; margin: 0; }
+            input { border-bottom: 2px solid #000 !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">ally</div>
+    <h2 style="text-align:center; margin-top:0;">JOINT CREDIT APPLICATION</h2>
+
+    <!-- Header -->
+    <table>
+        <tr class="header-row">
+            <td colspan="2"><strong>Application Type:</strong></td>
+            <td colspan="2"><strong>Transaction Type:</strong></td>
+            <td><strong>Dealer Number</strong></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="app_type" value="individual"> Individual
+            </td>
+            <td>
+                <input type="radio" name="app_type" value="business"> Business
+            </td>
+            <td>
+                <input type="radio" name="trans_type" value="retail"> Retail
+            </td>
+            <td>
+                <input type="radio" name="trans_type" value="lease"> Lease
+            </td>
+            <td>
+                <input type="radio" name="trans_type" value="balloon"> Balloon
+            </td>
+            <td rowspan="2">
+                <input type="text" name="dealer_number" placeholder="Enter Dealer #">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Applicant Information -->
+    <div class="section-header">APPLICANT INFORMATION</div>
+    <table>
+        <tr>
+            <td colspan="4"><strong>Last Name</strong> (or trade name of business)<br>
+                <input type="text" name="applicant_last">
+            </td>
+            <td><strong>First</strong><br><input type="text" name="applicant_first"></td>
+            <td><strong>Middle Initial</strong><br><input type="text" name="applicant_mi" maxlength="1"></td>
+            <td><strong>Suffix</strong><br><input type="text" name="applicant_suffix"></td>
+            <td><strong>Date of Birth</strong><br><input type="date" name="applicant_dob"></td>
+            <td><strong>Soc. Sec. # (or Tax ID #)</strong><br><input type="text" name="applicant_ssn"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><strong>Home or Business Phone Number</strong><br><input type="tel" name="applicant_phone_home"></td>
+            <td colspan="2"><strong>Cell Phone Number</strong><br><input type="tel" name="applicant_phone_cell"></td>
+            <td colspan="5"><strong>E-Mail Address</strong><br><input type="email" name="applicant_email"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Type of Enterprise</strong><br>
+                <input type="checkbox" name="enterprise_corp"> Corporation &nbsp;
+                <input type="checkbox" name="enterprise_partnership"> Partnership &nbsp;
+                <input type="checkbox" name="enterprise_llc"> LLC &nbsp;
+                <input type="checkbox" name="enterprise_proprietorship"> Proprietorship
+            </td>
+            <td colspan="3"><strong>Type of Business</strong><br><input type="text" name="business_type"></td>
+            <td colspan="3"><strong>Years in Business</strong><br>
+                <input type="number" name="years_business" style="width:60px;"> Years &nbsp;&nbsp;
+                <input type="number" name="months_business" style="width:60px;"> Months
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>Present Address</strong><br><input type="text" name="applicant_address"></td>
+            <td colspan="2"><strong>Zip Code</strong><br><input type="text" name="applicant_zip"></td>
+            <td><strong>City</strong><br><input type="text" name="applicant_city"></td>
+            <td><strong>State</strong><br><input type="text" name="applicant_state" maxlength="2"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Time at Present Address</strong><br>
+                <input type="number" name="applicant_address_years" style="width:60px;"> Years &nbsp;
+                <input type="number" name="applicant_address_months" style="width:60px;"> Months
+            </td>
+            <td colspan="6"><strong>Residence Type</strong><br>
+                <input type="radio" name="residence" value="owns"> Owns Outright &nbsp;
+                <input type="radio" name="residence" value="buying"> Buying &nbsp;
+                <input type="radio" name="residence" value="renting"> Renting/Leasing &nbsp;
+                <input type="radio" name="residence" value="family"> Family &nbsp;
+                <input type="radio" name="residence" value="other"> Other
+            </td>
+        </tr>
+        <tr>
+            <td colspan="9"><strong>Monthly Rent/Mortgage Payment</strong><br>$<input type="text" name="monthly_payment" style="width:150px;"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Present Job Title</strong><br><input type="text" name="job_title"></td>
+            <td colspan="3"><strong>Present Employer</strong><br><input type="text" name="employer"></td>
+            <td colspan="3"><strong>Employee Phone Number</strong><br><input type="tel" name="employer_phone"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Time at Present Job</strong><br>
+                <input type="number" name="job_years" style="width:60px;"> Years &nbsp;
+                <input type="number" name="job_months" style="width:60px;"> Months
+            </td>
+            <td colspan="3"><strong>Gross Income</strong><br>$<input type="text" name="gross_income"></td>
+            <td colspan="3"><strong>Income Received</strong><br>
+                <input type="radio" name="income_freq" value="monthly"> Monthly &nbsp;
+                <input type="radio" name="income_freq" value="yearly"> Yearly
+            </td>
+        </tr>
+    </table>
+
+    <p class="note">* Alimony, child support, or separate maintenance income need not be revealed if you do not wish to have it considered as a basis for repaying your obligation.</p>
+
+    <!-- Co-Applicant Information -->
+    <div class="section-header">CO-APPLICANT INFORMATION</div>
+    <table>
+        <!-- Identical structure to Applicant - fields prefixed with "co_" -->
+        <tr>
+            <td colspan="4"><strong>Last Name</strong> (or trade name of business)<br>
+                <input type="text" name="co_last">
+            </td>
+            <td><strong>First</strong><br><input type="text" name="co_first"></td>
+            <td><strong>Middle Initial</strong><br><input type="text" name="co_mi" maxlength="1"></td>
+            <td><strong>Suffix</strong><br><input type="text" name="co_suffix"></td>
+            <td><strong>Date of Birth</strong><br><input type="date" name="co_dob"></td>
+            <td><strong>Soc. Sec. # (or Tax ID #)</strong><br><input type="text" name="co_ssn"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><strong>Home or Business Phone Number</strong><br><input type="tel" name="co_phone_home"></td>
+            <td colspan="2"><strong>Cell Phone Number</strong><br><input type="tel" name="co_phone_cell"></td>
+            <td colspan="5"><strong>E-Mail Address</strong><br><input type="email" name="co_email"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Type of Enterprise</strong><br>
+                <input type="checkbox" name="co_enterprise_corp"> Corporation &nbsp;
+                <input type="checkbox" name="co_enterprise_partnership"> Partnership &nbsp;
+                <input type="checkbox" name="co_enterprise_llc"> LLC &nbsp;
+                <input type="checkbox" name="co_enterprise_proprietorship"> Proprietorship
+            </td>
+            <td colspan="3"><strong>Type of Business</strong><br><input type="text" name="co_business_type"></td>
+            <td colspan="3"><strong>Years in Business</strong><br>
+                <input type="number" name="co_years_business" style="width:60px;"> Years &nbsp;&nbsp;
+                <input type="number" name="co_months_business" style="width:60px;"> Months
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>Present Address</strong><br><input type="text" name="co_address"></td>
+            <td colspan="2"><strong>Zip Code</strong><br><input type="text" name="co_zip"></td>
+            <td><strong>City</strong><br><input type="text" name="co_city"></td>
+            <td><strong>State</strong><br><input type="text" name="co_state" maxlength="2"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Time at Present Address</strong><br>
+                <input type="number" name="co_address_years" style="width:60px;"> Years &nbsp;
+                <input type="number" name="co_address_months" style="width:60px;"> Months
+            </td>
+            <td colspan="6"><strong>Residence Type</strong><br>
+                <input type="radio" name="co_residence" value="owns"> Owns Outright &nbsp;
+                <input type="radio" name="co_residence" value="buying"> Buying &nbsp;
+                <input type="radio" name="co_residence" value="renting"> Renting/Leasing &nbsp;
+                <input type="radio" name="co_residence" value="family"> Family &nbsp;
+                <input type="radio" name="co_residence" value="other"> Other
+            </td>
+        </tr>
+        <tr>
+            <td colspan="9"><strong>Monthly Rent/Mortgage Payment</strong><br>$<input type="text" name="co_monthly_payment" style="width:150px;"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Present Job Title</strong><br><input type="text" name="co_job_title"></td>
+            <td colspan="3"><strong>Present Employer</strong><br><input type="text" name="co_employer"></td>
+            <td colspan="3"><strong>Employee Phone Number</strong><br><input type="tel" name="co_employer_phone"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Time at Present Job</strong><br>
+                <input type="number" name="co_job_years" style="width:60px;"> Years &nbsp;
+                <input type="number" name="co_job_months" style="width:60px;"> Months
+            </td>
+            <td colspan="3"><strong>Gross Income</strong><br>$<input type="text" name="co_gross_income"></td>
+            <td colspan="3"><strong>Income Received</strong><br>
+                <input type="radio" name="co_income_freq" value="monthly"> Monthly &nbsp;
+                <input type="radio" name="co_income_freq" value="yearly"> Yearly
+            </td>
+        </tr>
+    </table>
+
+    <p class="note">* Alimony, child support, or separate maintenance income need not be revealed if you do not wish to have it considered as a basis for repaying your obligation.</p>
+
+    <!-- Dealer Use Only -->
+    <div class="section-header">DEALER USE ONLY</div>
+    <table>
+        <tr>
+            <td colspan="2"><strong>Intended Use</strong><br>
+                <input type="radio" name="intended_use" value="personal"> Personal &nbsp;
+                <input type="radio" name="intended_use" value="business"> Business
+            </td>
+            <td><strong># of Units</strong><br><input type="number" name="units"></td>
+            <td colspan="6"><strong>VIN</strong><br><input type="text" name="vin"></td>
+        </tr>
+        <tr>
+            <td><strong>Vehicle Year</strong><br><input type="text" name="vehicle_year"></td>
+            <td><strong>Make</strong><br><input type="text" name="vehicle_make"></td>
+            <td><strong>Model</strong><br><input type="text" name="vehicle_model"></td>
+            <td><strong>Style/Trim</strong><br><input type="text" name="style"></td>
+            <td><strong>Mileage</strong><br><input type="text" name="mileage"></td>
+            <td><strong>Cylinders</strong><br><input type="text" name="cylinders"></td>
+            <td colspan="3"><strong>Trade Vehicle</strong><br>
+                <input type="checkbox" name="trade_yes"> Yes &nbsp;
+                <input type="checkbox" name="trade_no"> No
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><strong>Trade Make</strong><br><input type="text" name="trade_make"></td>
+            <td colspan="2"><strong>Trade Model</strong><br><input type="text" name="trade_model"></td>
+            <td colspan="5"><strong>New/Used</strong><br>
+                <input type="checkbox" name="new"> New &nbsp;
+                <input type="checkbox" name="demo"> Demo &nbsp;
+                <input type="checkbox" name="used"> Used &nbsp;
+                <input type="checkbox" name="certified"> Certified Used &nbsp;
+                <input type="checkbox" name="auction"> Auction
+            </td>
+        </tr>
+        <!-- Special Programs -->
+        <tr>
+            <td colspan="9">
+                <strong>Special Programs</strong><br>
+                <input type="checkbox" name="abc_48"> ABC - 48 mos. &nbsp;
+                <input type="checkbox" name="abc_60"> ABC - 60 mos. &nbsp;
+                <input type="checkbox" name="abc_72"> ABC - 72 mos. &nbsp;
+                <input type="checkbox" name="abc_84"> ABC - 84 mos. &nbsp;
+                <input type="checkbox" name="subvent"> Subvented Program &nbsp;
+                <input type="checkbox" name="custom"> Custom Pay-A-Month &nbsp;
+                <input type="checkbox" name="first_time"> First Time Buyer Loyalty &nbsp;
+                <input type="checkbox" name="lease_to_retail"> Lease to Retail &nbsp;
+                <input type="checkbox" name="elec_veh"> Elec. Vehicle Rebate / Payment &nbsp;
+                <input type="checkbox" name="single_payment"> Single Payment Lease
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Cash Selling Price/Cost</strong><br>$<input type="text" name="cash_price"></td>
+            <td colspan="2"><strong>Trade Allowance</strong><br>$<input type="text" name="trade_allowance"></td>
+            <td colspan="2"><strong>Taxes</strong><br>$<input type="text" name="taxes"></td>
+            <td colspan="2"><strong>Trade Bal. Owed</strong><br>$<input type="text" name="trade_balance"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Cash Downpayment</strong><br>$<input type="text" name="cash_down"></td>
+            <td colspan="2"><strong>Rebate</strong><br>$<input type="text" name="rebate"></td>
+            <td colspan="2"><strong>Trade-In, Alloy Fees</strong><br>$<input type="text" name="fees"></td>
+            <td colspan="2"><strong>Security Deposit</strong><br>$<input type="text" name="security_deposit"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Service Contract / Contract</strong><br><input type="text" name="service_contract"></td>
+            <td colspan="2"><strong>GAP</strong><br><input type="text" name="gap"></td>
+            <td colspan="2"><strong>Other Insurance</strong><br><input type="text" name="other_insurance"></td>
+            <td colspan="2"><strong>Est. Monthly Payment</strong><br>$<input type="text" name="est_payment"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Credit Life</strong><br><input type="text" name="credit_life"></td>
+            <td colspan="2"><strong>Credit Disability</strong><br><input type="text" name="credit_disability"></td>
+            <td colspan="2"><strong>Term</strong><br><input type="text" name="term"></td>
+            <td colspan="2"><strong>MSRP</strong><br>$<input type="text" name="msrp"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><strong>Misc (MISSOURI/KS)</strong><br><input type="text" name="misc"></td>
+            <td colspan="5"><strong>Van Conversion/Light Cost</strong><br>$<input type="text" name="van_cost"></td>
+        </tr>
+    </table>
+
+    <!-- Joint Credit Intent -->
+    <table>
+        <tr>
+            <td colspan="9">
+                <input type="checkbox" name="joint_credit"> 
+                <strong>I intend to apply for joint credit.</strong> 
+                Applicant (initials only): <input type="text" name="applicant_initials" maxlength="3" style="width:60px;"> &nbsp;&nbsp;
+                Co-Applicant (initials only): <input type="text" name="co_initials" maxlength="3" style="width:60px;">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Signatures -->
+    <div class="signature-line">
+        <strong>Applicant's Signature</strong> 
+        <input type="text" name="applicant_sig" style="width:55%; border-bottom:2px solid #000; border-top:none; border-left:none; border-right:none;">
+        <strong>Date</strong> 
+        <input type="date" name="applicant_date">
+    </div>
+    <div class="signature-line" style="margin-top:30px;">
+        <strong>Co-Applicant's Signature</strong> 
+        <input type="text" name="co_sig" style="width:55%; border-bottom:2px solid #000; border-top:none; border-left:none; border-right:none;">
+        <strong>Date</strong> 
+        <input type="date" name="co_date">
+    </div>
+
+    <p style="margin-top:30px; font-size:0.9em;">
+        <strong>See Page 2 for important notices.</strong> By signing below, I certify that I have read and agree to the terms of this application including terms on Page 2.
+    </p>
+
+    <div class="footer">
+        3071 JOINT 5/2013 (Joint Credit Application) Copyright 2013 Ally Financial. All Rights Reserved. &nbsp;&nbsp; Page 1 of 2
+    </div>
+
+    <script>
+        // Optional: Auto-save to localStorage so you don't lose progress
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('change', () => {
+                localStorage.setItem(input.name, input.value);
+            });
+            // Load saved values
+            const saved = localStorage.getItem(input.name);
+            if (saved) input.value = saved;
+        });
+    </script>
+</body>
+</html>
